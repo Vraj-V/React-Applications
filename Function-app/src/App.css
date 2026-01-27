@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    margin: 10px;
+    padding: 10px;
+}
+/* .box{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+
+} */
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+}
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+}
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+}
+
+
+button{
+    margin: 10px;
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
