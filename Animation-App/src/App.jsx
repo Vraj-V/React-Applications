@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div>
-
+ <h1>This are Animation</h1>
 
         <motion.div
         animate={{ rotate: 360 }}
