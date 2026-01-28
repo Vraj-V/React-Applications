@@ -10,8 +10,9 @@ const App = () => {
 
   
   return (
-    <div>
-      <Fetch onClick={getData}/>
+    <div className="parent">
+      
+        <Fetch onClick={getData}/>
       <FetchAwt />
       <Axioss />
       <Axios />
