@@ -115,3 +115,11 @@ background-size: cover;
   font-size: 11px;
   color:#727272;
 }
+
+.heading{
+  padding-top: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  background-color: #111;
+}

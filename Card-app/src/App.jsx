@@ -119,12 +119,14 @@ const jobs = [
 ];
 
   return (
+    <>
+    <h1 className='heading'>Job Listing</h1>
     <div className='parent' >
       {/* <h1>{jobs.map(e => e.company)}</h1> */}
       {jobs.map((value)=>{
         // console.log(value.company);
         return(
-          <Card 
+          <Card
           key = {value.id}
           brandLogo = {value.brandLogo}
           company= {value.company}
@@ -139,6 +141,7 @@ const jobs = [
       })}
 
   </div>
+  </>
   )
 }
 
