@@ -8,7 +8,7 @@ const Navbar = () => {
             <h1 className="text-3xl font-bold underline text-red-500"> Logo </h1>
             
             <div className='text-white flex items-center gap-5 px-10 '>
-
+              <input type="text" placeholder='search'  className='search'/>
                 <Link to='/' className='hover:text-red-400 text-medium active:scale-95'>Home</Link>
                 <Link to='/about'  className='hover:text-red-400 text-medium active:scale-95'>About</Link>
                 <Link to='/contact'  className='hover:text-red-400 text-medium active:scale-95'>Contact</Link>

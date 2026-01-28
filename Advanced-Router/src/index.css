@@ -20,3 +20,11 @@ h3{
   color: red;
   z-index: 1 !important;
 }
+
+.search{
+  
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 8px 10px;
+  margin-right: 10px;
+}
