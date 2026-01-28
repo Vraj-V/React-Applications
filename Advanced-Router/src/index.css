@@ -12,3 +12,11 @@ h3{
 .text-container{
   color: black;
 }
+.text-center{
+  position: relative;
+  top: 200px;
+  left: 300px;
+  font-size: 20px;
+  color: red;
+  z-index: 1 !important;
+}
