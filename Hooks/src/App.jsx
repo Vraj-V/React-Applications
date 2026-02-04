@@ -1,10 +1,13 @@
 import React from 'react'
-import UseState from './Components/useState/UseState'
-import UseEffect from './Components/useState/UseEffect'
-import UseRef from './Components/useState/UseRef'
-import UseRef2 from './Components/useState/UseRef2'
-import UseContext from './Components/useState/UseContext/UseContext'
-import LevelOne from './Components/useState/UseContext/UsingContext/LevelOne'
+import UseState from './Components/ReactHook/UseState'
+import UseEffect from './Components/ReactHook/UseEffect'
+import UseRef from './Components/ReactHook/UseRef'
+import UseRef2 from './Components/ReactHook/UseRef2'
+import UseContext from './Components/ReactHook/UseContext/UseContext'
+import LevelOne from './Components/ReactHook/UseContext/UsingContext/LevelOne'
+import Memo from './Components/ReactMemo/Memo'
+import Parent from './Components/ReactHook/UseCallback/Parent'
+import UseCallbacks from './Components/ReactHook/UseCallback/UseCallbacks'
 
 const App = () => {
   return (
@@ -34,6 +37,25 @@ const App = () => {
         <UseContext /> 
         {/* Props driling */}
         {/* <LevelOne /> */}
+      </div>
+
+      <br />
+      <hr />
+      <div>
+        <Memo />
+      </div>
+
+
+       <br />
+      <hr />
+      <div>
+        <h3>Without Call back</h3>
+        <Parent />
+
+        <hr />
+        <br />
+        <h3>With callback</h3>
+        <UseCallbacks />
       </div>
     </div>
   )
