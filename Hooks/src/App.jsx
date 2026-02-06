@@ -8,6 +8,7 @@ import LevelOne from './Components/ReactHook/UseContext/UsingContext/LevelOne'
 import Memo from './Components/ReactMemo/Memo'
 import Parent from './Components/ReactHook/UseCallback/Parent'
 import UseCallbacks from './Components/ReactHook/UseCallback/UseCallbacks'
+import UseMemo from './Components/ReactHook/UseMemo/UseMemo'
 
 const App = () => {
   return (
@@ -46,7 +47,7 @@ const App = () => {
       </div>
 
 
-       <br />
+      <br />
       <hr />
       <div>
         <h3>Without Call back</h3>
@@ -56,6 +57,13 @@ const App = () => {
         <br />
         <h3>With callback</h3>
         <UseCallbacks />
+      </div>
+    <br />
+
+      {/* useMemo */}
+      <div>
+        <h2>useMemo calling</h2>
+        <UseMemo />
       </div>
     </div>
   )
