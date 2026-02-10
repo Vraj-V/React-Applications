@@ -2,22 +2,39 @@
     color: red;
 } */
 
+*{
 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+body{
+    overflow: hidden;
+}
 .container{
     max-width: 1080px;
     margin: 50px auto;
     /* border: 1px solid red; */
     height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
 }
 .title{
     text-align: left;
-    font-size: 50px;
+    font-size: 96px;
+    white-space: nowrap;
     color: #333;
 }
 
 .playButton{
-    padding: 8px 28px;
-    font-size: 18px;
+    display: flex;
+    justify-content: end;
+    padding: 8px 98px;
+    font-size: 24px;
     background-color: #0c0d0d;
     color: white;
     border: none;
