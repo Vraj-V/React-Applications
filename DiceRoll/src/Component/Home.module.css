@@ -1,0 +1,26 @@
+/* h1{
+    color: red;
+} */
+
+
+.container{
+    max-width: 1080px;
+    margin: 50px auto;
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+.title{
+    text-align: left;
+    font-size: 50px;
+    color: #333;
+}
+
+.playButton{
+    padding: 8px 28px;
+    font-size: 18px;
+    background-color: #0c0d0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
