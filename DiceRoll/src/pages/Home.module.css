@@ -10,9 +10,6 @@
     font-family: 'Poppins', sans-serif;
    
 }
-body{
-    overflow: hidden;
-}
 .container{
     max-width: 1080px;
     margin: 50px auto;

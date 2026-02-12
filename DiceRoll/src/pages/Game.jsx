@@ -3,13 +3,14 @@ import style from './Game.module.css'
 import TotalScore from '../Component/TotalScore';
 import NumberSelector from '../Component/NumberSelector';
 import RollDice from '../Component/RollDice';
+import Rules from '../Component/Rules';
 const Game = ({flag, setFlag}) => {
 
         const [selectedNumber, setSelectedNumber] = useState(0);
         const [currentDice,setCurrentDice] = useState(1)
         const [totalScore, setTotalScore] = useState(0);
         const [Error, setError] = useState('');
-
+        const [showRules, setShowRules] = useState(false);
 
   console.log(flag);
   const returnHome = () => {
@@ -40,13 +41,14 @@ const Game = ({flag, setFlag}) => {
         setSelectedNumber(undefined)
     }
   
-  
-  
+  // Resetting the game
+  const resetGame = () => {
+    setTotalScore(0);
+  }
   return (
     <>
     <div className={style.main}>
     <div className={style.container}>
-      <h2>Game Screen</h2>
       <button onClick={returnHome} className={style.playbutton}>X</button>
     </div>
     <main className={style.Main}>
@@ -54,6 +56,15 @@ const Game = ({flag, setFlag}) => {
     <NumberSelector Error={Error} setError={setError} selectedNumber={selectedNumber} setSelectedNumber ={setSelectedNumber}/>
     </main>
     <RollDice  currentDice ={currentDice} rollingDice={rollingDice} />
+    <div className={style.btns}>
+        <button className={style.reset} onClick={resetGame}>Reset</button>
+        <button onClick={() => setShowRules(!showRules)}>How to Play </button>
+    </div>
+    {showRules && <div className={style.rules}>
+      <Rules />
+    </div>
+    }
+
     </div>
     </>
   )
