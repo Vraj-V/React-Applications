@@ -4,10 +4,10 @@ import Game from './pages/Game';
 
 
 const App = () => {
-  const [flag, setFlag] = useState(false);
+  const [flag, setFlag] = useState(true);
 
   const handleClick = () => {
-    setFlag(true);
+    setFlag(false);
   }
   return (
     <div>
