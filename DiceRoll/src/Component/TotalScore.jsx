@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const TotalScore =()=>{
+const TotalScore =({totalScore})=>{
     return(
         <div>
         <ScoreContainer>
-            <h1>0</h1>
+            <h1>{totalScore}</h1>
             <p>Total Score</p>
             </ScoreContainer>
         </div>
