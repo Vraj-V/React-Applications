@@ -1,0 +1,35 @@
+.main{
+    max-width: 1080px;
+    margin: 20px auto;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.playbutton{
+    display:none;
+    background-color: black;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+/* Score */
+.score{
+    max-width: 200px;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.score h1{
+    font-size: 100px;
+    line-height: 100px;
+     
+}
+.score p{
+    font-size: 24px;
+    font-weight: 500;
+}

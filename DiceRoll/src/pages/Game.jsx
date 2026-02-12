@@ -8,10 +8,18 @@ const Game = ({flag, setFlag}) => {
   }
 
   return (
+    <>
+    <div className={style.main}>
     <div className={style.container}>
       <h1>Game Screen</h1>
       <button onClick={returnHome} className={style.playbutton}>X</button>
     </div>
+    <div className={style.score}>
+      <h1>0</h1>
+      <p>Total Score</p>
+    </div>
+    </div>
+    </>
   )
 }
 

@@ -1,13 +1,13 @@
 import React,{useState} from 'react'
-import Home from './Component/Home'
-import Game from './Component/Game';
+import Home from './pages/Home'
+import Game from './pages/Game';
 
 
 const App = () => {
-  const [flag, setFlag] = useState(true);
+  const [flag, setFlag] = useState(false);
 
   const handleClick = () => {
-    setFlag(false);
+    setFlag(true);
   }
   return (
     <div>
