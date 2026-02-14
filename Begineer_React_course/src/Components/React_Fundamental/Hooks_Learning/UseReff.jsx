@@ -4,7 +4,7 @@ const UseReff = () => {
 const input =useRef(null); 
 
 const handleClick =()=>{
-    input.current.focus();
+    input.current.focus(); 
     console.log(input.current.value);
 }
     return (
